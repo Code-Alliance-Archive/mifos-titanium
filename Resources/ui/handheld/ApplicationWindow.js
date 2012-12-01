@@ -5,10 +5,10 @@ function ApplicationWindow(title) {
 	});
 	
 	var button = Ti.UI.createButton({
-		height:44,
-		width:200,
-		title:L('openWindow'),
-		top:20
+		height:44 * Titanium.Platform.displayCaps.dpi / 160,
+		width:200 * Titanium.Platform.displayCaps.dpi / 160,
+		title:L('login'),
+		top:20 * Titanium.Platform.displayCaps.dpi / 160
 	});
 	self.add(button);
 	
